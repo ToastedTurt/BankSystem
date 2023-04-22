@@ -1,3 +1,9 @@
+hook.Add("Initialize", "PrintMessage", function()
+    for i = 1, 20 do
+        print("This message will appear 20 times!")
+    end
+end)
+
 -- Define the function
 local function CheckVGUI()
     if not vgui then
